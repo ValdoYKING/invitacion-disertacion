@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disertación de Ingeniería</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Playwrite+MX+Guides&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="invitation">
+        <div class="header">
+            <img src="imgs/log_uni.png" alt="Logo de graduación">
+            <h1>Ingeniería en Desarrollo y Gestión de Software</h1>
+            <h2>Disertación</h2>
+        </div>
+        <div class="invitation-body">
+            <p>Es un honor para mí compartir este momento tan especial con todos ustedes.</p>
+            <p>Después de años de esfuerzo y dedicación, ¡alcanzo esta meta tan importante en mi vida!</p>
+            <p>Quiero celebrar mi disertación rodeado de las personas que me han apoyado y acompañado en este camino.</p>
+        </div>
+        <div class="details-container">
+            <h3>Detalles</h3>
+            <div class="details">
+                <div class="details-column left">
+                    <p><strong>Presentado por:</strong> Osvaldo Villalba Mendoza</p>
+                    <p><strong>Fecha:</strong> 16 de enero de 2025</p>
+                    <p><strong>Hora:</strong> 09:00 hrs</p>
+                </div>
+                <div class="details-column right">
+                    <p><strong>Lugar:</strong> Sala "A" ubicada al interior del edificio de Informatica</p>
+                    <p><strong>Área:</strong> Informatica y Computacion</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="cuenta-regresiva">
+            <h2>Cuenta Regresiva</h2>
+            <div id="contador">
+                <div class="tiempo"><span id="dias">00</span><p>Días</p></div>
+                <div class="tiempo"><span id="horas">00</span><p>Horas</p></div>
+                <div class="tiempo"><span id="minutos">00</span><p>Minutos</p></div>
+                <div class="tiempo"><span id="segundos">00</span><p>Segundos</p></div>
+            </div>
+        </section>
+
+        <section id="mapa">
+            <h2>Ubicación</h2>
+            <div id="mapa-contenedor">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.3775994261359!2d-98.98820545879907!3d19.404078674333412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e319c90e99a3%3A0xe3b688fcadf7422c!2sCto.%20Rey%20Nezahualc%C3%B3yotl%2022%2C%20Rey%20Neza%2C%2057809%20Cdad.%20Nezahualc%C3%B3yotl%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1734822119251!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+     <script>
+        // Función para animar al hacer scroll
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+        observer.observe(document.querySelector('#invitation'));
+    </script>
+</body>
+</html>
