@@ -60,6 +60,9 @@
             </div>
         </section>
 
+        <button class="donwload_pdf" onclick="descargarPDF()">Descargar memoria pdf</button>
+
+
         <section id="mapa">
             <h2>Ubicación</h2>
             <div id="mapa-contenedor" style="overflow: hidden; border-radius: 15px;">
@@ -83,6 +86,11 @@
             });
         });
         observer.observe(document.querySelector('#invitation'));
+
+        function descargarPDF() {
+            window.location.href = 'docs/Auto_Glass.pdf';
+        }
+        
     </script>
 </body>
 
