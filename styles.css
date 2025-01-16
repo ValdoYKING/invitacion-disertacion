@@ -202,7 +202,8 @@ body {
     max-width: 100%;
 }
 
-.donwload_pdf {
+.download_pdf {
+    font-family: "Dancing Script", serif;
     background-color: #ff851b;
     /* Color de fondo */
     border: none;
@@ -229,7 +230,7 @@ body {
     /* Animación de transición */
 }
 
-.donwload_pdf:hover {
+.download_pdf:hover {
     background-color: #ff7b00;
     /* Cambia el color de fondo al pasar sobre el botón */
 }
